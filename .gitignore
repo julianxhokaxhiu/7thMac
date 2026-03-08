@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# ...but
+!.github/**
+!.gitignore
+!app.icns
+!build_app.sh
+!entitlements.plist
+!Info.plist
+!launcher.swift
+!README.md
