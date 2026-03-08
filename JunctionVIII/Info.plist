@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleExecutable</key>
+    <string>JunctionVIII</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>com.tsunamods.JunctionVIII</string>
+
+    <key>CFBundleName</key>
+    <string>Junction VIII</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>Junction VIII</string>
+
+    <key>CFBundleVersion</key>
+    <string>0.0.0</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>0.0.0</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleSignature</key>
+    <string>????</string>
+
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+
+    <!-- Allow the app to run on Apple Silicon natively -->
+    <key>LSArchitecturePriority</key>
+    <array>
+        <string>arm64</string>
+        <string>x86_64</string>
+    </array>
+
+    <!-- Required for Wine's memory model -->
+    <key>LSEnvironment</key>
+    <dict>
+        <key>WINE_LARGE_ADDRESS_AWARE</key>
+        <string>1</string>
+    </dict>
+
+    <!-- Prevent macOS from treating this as a simple script -->
+    <key>NSHighResolutionCapable</key>
+    <true/>
+
+    <key>NSSupportsAutomaticGraphicsSwitching</key>
+    <true/>
+
+    <!-- Network access for downloading installer -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+</dict>
+</plist>
